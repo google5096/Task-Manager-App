@@ -1,0 +1,38 @@
+/* src/components/Task.css */
+
+/* Center the task manager and reduce its width */
+.task-manager {
+    max-width: 500px; /* Adjust width to make it narrower */
+    margin: 0 auto;   /* Center the div horizontally */
+    padding: 20px;    /* Add some padding */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+/* Style for the task container */
+.task {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Background color for completed tasks */
+  .task.completed {
+    background-color: #d4edda; /* Light green */
+  }
+  
+  /* Background color for incomplete tasks */
+  .task.incomplete {
+    background-color: #f8d7da; /* Light red */
+  }
+  
+  /* Text decoration for completed tasks */
+  .task .task-name.completed {
+    text-decoration: line-through;
+  }
+  
